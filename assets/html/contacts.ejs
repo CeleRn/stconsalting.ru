@@ -10,28 +10,22 @@
 </head>
 
 <body>
-  <header class="header header_home">
+  <header class="header header_contacts">
     <div class="header__bg header__bg_blue"></div>
     <div class="header__top">
       <div class="header__top-bg"></div>
       <div class="container">
-        <%- include('commons/logo', {index: true}) %>
+        <%- include('commons/logo', {index: false}) %>
         <%- include commons/main-menu %>
         <%- include commons/phone %>
       </div>
     </div>
     <div class="header__bottom top-block">
       <div class="container">
-        <h1 class="main-title">Современные технологии консалтинга</h1>
-        <div class="top-block__description">
-          <p>СТК - российская группа компаний, которая обслуживает корпоративных клиентов и физических лиц. Мы готовы помочь
-            нашим клиентам решить вопросы любой сложности </p>
-        </div>
+        <h1 class="main-title">Контактная информация</h1>
       </div>
     </div>
   </header>
-  <%- include('commons/services', {title: true}) %>
-  <%- include commons/advantages %>
   <%- include commons/contacts %>
   <%- include commons/footer %>
   

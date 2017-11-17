@@ -140,9 +140,39 @@ module.exports = {
     }),
     new SpriteLoaderPlugin(),
     new HtmlWebpackPlugin({
-      title: 'My App',
+      title: 'Группа СТК | Официальный сайт',
       filename: 'index.html',
       template: 'ejs-render?raw=true!./assets/html/index.ejs',
+      inject: 'body'
+    }),
+    new HtmlWebpackPlugin({
+      title: 'О Группе СТК',
+      filename: 'about.html',
+      template: 'ejs-render?raw=true!./assets/html/about.ejs',
+      inject: 'body'
+    }),
+    new HtmlWebpackPlugin({
+      title: 'Контакная информация Группы СТК',
+      filename: 'contacts.html',
+      template: 'ejs-render?raw=true!./assets/html/contacts.ejs',
+      inject: 'body'
+    }),
+    new HtmlWebpackPlugin({
+      title: 'Направления деятельности Группы СТК',
+      filename: 'services/index.html',
+      template: 'ejs-render?raw=true!./assets/html/services.ejs',
+      inject: 'body'
+    }),
+    new HtmlWebpackPlugin({
+      title: 'Комплексное юридическое сопровождение бизнеса',
+      filename: 'services/complex.html',
+      template: 'ejs-render?raw=true!./assets/html/complex.ejs',
+      inject: 'body'
+    }),
+    new HtmlWebpackPlugin({
+      title: 'Антимонопольная практика',
+      filename: 'services/antitrust.html',
+      template: 'ejs-render?raw=true!./assets/html/antitrust.ejs',
       inject: 'body'
     }),
     new webpack.HotModuleReplacementPlugin({

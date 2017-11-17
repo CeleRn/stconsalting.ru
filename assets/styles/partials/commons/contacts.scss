@@ -1,0 +1,87 @@
+.contacts {
+    padding: 100px 0 90px 0;
+    display: flex;
+    justify-content: center;
+
+}
+
+.contacts-list {
+    padding-left: 0;
+    list-style: none;
+    display: flex;
+    width: 950px;
+    justify-content: space-between;
+    position: relative;
+    margin: 0 auto;
+    @include media-breakpoint-down(md) {
+        width: auto;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+}
+.contacts-list-item {
+   width: 300px;
+   padding: 15px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   @include media-breakpoint-down(md) {
+       margin-bottom: 25px;
+   }
+    &__icon {
+        width: 102px;
+        height: 102px;
+        border-radius: 51px;
+        background-color: $main-color;
+        display: flex;
+        align-items: center;
+        margin-bottom: 15px;
+        @include media-breakpoint-down(md) {
+            width: 60px;
+            height: 60px;
+            border-radius: 30px;
+        }
+        
+    }
+    &__icon-image {
+        fill: #fff;
+        height: 41px;
+        width: 102px;
+        @include media-breakpoint-down(md) {
+            width: 60px;
+            height: 30px;
+        }
+        &_email {
+            height: 31px;
+            @include media-breakpoint-down(md) {
+                height: 20px;
+            }
+        }
+        
+    }
+    &__phone {
+        font-size: 22px;
+        font-weight: 700;
+        color: $main-color-dark-gray;
+    }
+    &__link {
+        color: $main-color-light;
+        border-bottom: 1px solid rgba($main-color-light, 0.3);
+        &:hover, &:focus {
+            border-bottom-color: $main-color-light;
+            text-decoration: none;
+            color: $main-color-light;
+        }
+    }
+    &__address {
+        font-size: 16px;
+        font-weight: 300;
+        text-align: center;
+        color: $main-color-dark-gray;
+    }
+    &__email {
+        font-size: 22px;
+        font-weight: 700;
+        color: $main-color-dark-gray;
+    }
+}

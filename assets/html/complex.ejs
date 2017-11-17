@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link href="https://fonts.googleapis.com/css?family=Noto+Serif:400,700|Roboto:300,400&amp;subset=cyrillic" rel="stylesheet">
+  <!-- Bootstrap CSS -->
+</head>
+
+<body>
+  <header class="header header_complex">
+    <div class="header__bg header__bg_blue"></div>
+    <div class="header__top">
+      <div class="header__top-bg"></div>
+      <div class="container">
+        <%- include('commons/logo', {index: false}) %>
+        <%- include commons/main-menu %>
+        <%- include commons/phone %>
+      </div>
+    </div>
+    <div class="header__bottom top-block">
+      <div class="container">
+        <h1 class="main-title">Комплексное юридическое сопровождение бизнеса</h1>
+        <div class="top-block__description">
+          <p>Мы - группа компаний, созданная в 2016 году, объединившая высококлассных профессионалов. </p>
+          
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="description">
+    <div class="container">
+        <p>Наши корпоративные клиенты - как состоявшиеся компании и транснациональные корпорации - ведущие игроки на российском
+            и международном рынке, так и стартапы. И все они для нас одинаково важны и ценны.</p>
+        <p>Мы работаем в рамках правового поля и в строгом соответствии с действующим законодательством.</p>
+        <p>Сотрудничество со всеми нашими Клиентами строится на условиях соблюдения строгой конфиденциальности.</p>
+    </div>
+  </div>
+
+  <%- include commons/advantages %>
+  <%- include commons/contacts %>
+  <%- include commons/footer %>
+
+
+
+</body>
+
+</html>
