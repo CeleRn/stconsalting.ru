@@ -1,0 +1,45 @@
+.services {
+    padding: 90px 0;
+    .container {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        font-size: 38px;
+        
+    }
+    &__title {
+        flex: 0 0 100%;
+        text-align: center;
+        font-weight: 700;
+        color: #666666;
+        text-transform: uppercase;
+        margin-bottom: 40px;
+    }
+    &__item {
+        flex: 0 0 33%;
+    }
+}
+
+.service-item {
+    padding: 40px 30px;
+    // border: 1px solid #ccc;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &:hover {
+        background-color: rgba(0,0,0,0.01);
+        // box-shadow: -2px 2px 4px rgba(0,0,0,0.1);
+        .service-item__icon {
+            opacity: 1;
+        }
+    }
+    &__title {
+        font-size: 22px;
+        text-align: center;
+    }
+    &__icon {
+        width: 150px;
+        margin-bottom: 25px;
+        opacity: .4;
+    }
+}

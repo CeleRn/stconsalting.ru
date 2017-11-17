@@ -1,0 +1,311 @@
+// Карточка услуги
+.service {
+    &__title {
+        font-family: $font-family-serif;
+        padding-bottom: .2em;
+        color: #333;
+        // border-bottom: 1px solid #dedede;
+        margin-bottom: 1em;
+    }
+    &__main {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    &__description {
+        padding: 1.5em 0;
+        color: #666;
+        font-weight: 300;
+    }
+    &__description {
+        p {
+            margin-bottom: 10px;
+        }
+    }
+}
+.image-block {
+    position: relative;
+    flex: 0 0 30%;
+    &__main-image {
+        width: 100%;
+        border-radius: 50%;
+        border:5px solid $second-color;
+        margin-bottom: 2em;
+    }
+}
+.other-devices {
+    display: flex;
+    border-top: 3px solid $second-color;
+    justify-content: space-between;
+    &__link {
+        padding: .5em;
+        margin: 0 0.1em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &:hover, &:focus {
+            background-color: #f2f2f2;
+            .other-devices__icon {
+                fill: #888;
+            }
+        }
+        &:first-child {
+            margin-left: 0;
+        }
+        &_active {
+            color: #626262;
+            background-color: $second-color;
+            &:hover, &:focus {
+                background-color: $second-color;
+                .other-devices__icon {
+                    fill: #f5f5f5;
+                }
+            }
+            .other-devices__icon {
+                fill: #fff;
+            }
+        }
+    }
+    &__icon {
+        width: 36px;
+        height: 36px;
+        fill: #ccc;
+    }
+}
+.info-block {
+    flex: 0 0 65%;
+}
+.price {
+    position: relative;
+    border-bottom: 1px solid rgba($accent-color, .3);
+    &__value {
+        font-size: 3em;
+        font-weight: 400;
+    }
+    &__currency {
+        font-size: 3em;
+        font-weight: 400;
+    }
+    &__more-link {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        display: block;
+        font-size: 14px;
+        line-height: 35px;
+        padding: 0 1.2em;
+        background-color: $accent-color;
+        color: #ffffff;
+        &:hover, &:focus {
+            background-color: darken($accent-color, 7.5%);
+            color: #ffffff;
+            text-decoration: none;
+        }
+    }
+}
+.area {
+    &__title {
+        text-align: center;
+        font-size: 1.5em;
+        font-weight: 300;
+        color: #888;
+        text-transform: uppercase;
+        margin-bottom: .7em;
+    }
+}
+.area-list {
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: row;
+}
+.area-item {
+    flex: 0 0 48%;
+    max-width: 48%;
+    position: relative;
+    padding: .5em 1em .5em 4em;
+    border: 1px solid $second-color-light;
+    border-radius: .5em;
+    &:hover {
+        background-color: #f5f5f5;
+        .area-item__link-more {
+            border-color: $accent-color;
+        }
+    }
+    
+    &__title {
+        
+        font-size: 1.1em;
+        color: #333;
+        font-weight: 400;
+        text-transform: uppercase;
+    }
+    &__desc {
+        font-size: .9em;
+        font-weight: 300;
+        color: #888;
+    }
+    &__link-more {
+        position: absolute;
+        bottom: -1.4em;
+        right: 1.2em;
+        font-size: 14px;
+        padding: .5em 1em;
+        border: 1px solid rgba($accent-color,.8);
+        
+        border-radius: 1.5em;
+        display: block;
+        overflow: hidden;
+        color: #666;
+        background-color: #fff;
+        text-transform: uppercase;
+        &:hover, &:focus {
+            background-color: $accent-color;
+            text-decoration: none;
+            color: #fff;
+            cursor: pointer;
+        }
+    }
+    &__icon {
+        position: absolute;
+        top: .5em;
+        left: .5em;
+        width: 2.5em;
+        height: 2.5em;
+        fill: $second-color-light;
+    }
+}
+
+
+// Блок с вкладками с дополнительной информацией
+
+.detail-info {
+    margin-top: 70px;
+    border-bottom:2px solid $second-color-dark;
+    &__icon {
+        width: 24px;
+        height: 24px;
+        fill: #fff;
+        margin-right: 3px;
+    }
+    .nav {
+        background-color: $second-color;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        flex-direction: row;
+        border-top:2px solid $second-color-dark;
+    }
+    .nav-link {
+        color: #fff;
+        font-weight: 400;
+        display: flex;
+        align-items: center;
+        &.active {
+            background-color: #fff;
+            color: #666;
+            border-top-color:$second-color;
+            text-shadow: none;
+            .detail-info__icon {
+                fill: #666;
+            }
+        }
+    }
+    .tab-pane {
+        padding: 1.5em;
+    }
+    
+}
+
+// Блок вкладки Стоимость (подробно)
+.price-more {
+    margin-bottom: 35px;
+    &__title {
+        color: #888;
+        text-transform: uppercase;
+        font-family: $font-family-serif;
+    }
+    &__value {
+        font-size: 2.2em;
+        font-weight: 700;
+        color: #666;
+    }
+    &__desc {
+        color: #999;
+        font-weight: 300;
+        font-size: .9em;
+        line-height: 1.2em;
+        border-top: 1px solid #dedede;
+        padding-top: .3em;
+    }
+}
+// Блок "Вы получите" в блоке Стоимость (подробнее)
+.total {
+    background-color: $second-color-dark;
+    margin: 0 -1.5em -1.5em -1.5em;
+    padding: 1.5em 0;
+    &__title {
+        font-family: $font-family-serif;
+        color: #fff;
+        border-bottom: 1px solid #e5e5e5;
+        margin-bottom: .5em;
+        padding-bottom: .2em;
+    }
+    &__text {
+        font-weight: 300;
+        color: #fff;
+        text-shadow: $default-text-shadow;
+        p {
+            margin-bottom: 0;
+        }
+        
+    }
+}
+
+// Блок подробное описание
+.description {
+    font-weight: 300;
+    font-style: 1.2em;
+}
+
+// Вкладка с видео
+.video-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.video-list-item {
+    flex: 0 0 30%;
+    margin-bottom: 40px;
+    &__video {
+        width: 100%;
+        border: none;
+    }
+    &__title {
+        color: #888;
+        font-family: $font-family-serif;
+    }
+    &__desc {
+        color: #777;
+        font-weight: 300;
+        line-height: 1.2em;
+        font-size: .9em;
+    }
+}
+
+// Вкладка с рекомендациями
+.recommend {
+    margin-bottom: 2em;
+    &__title {
+        color: #888;
+        text-transform: uppercase;
+        font-family: $font-family-serif;
+    }
+    &__desc {
+        font-weight: 300;
+        color: #333; 
+    }
+}
