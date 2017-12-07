@@ -9,6 +9,7 @@ require('./styles/main.scss');
 /////////////////////////////////
 
 require('./images/logo-group-stk-only.svg');
+require('./images/logo-udelta.svg');
 
 /////////////////////////////////
 // Загрузка иконок для спрайта //

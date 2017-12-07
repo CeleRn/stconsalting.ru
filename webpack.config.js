@@ -175,6 +175,66 @@ module.exports = {
       template: 'ejs-render?raw=true!./assets/html/antitrust.ejs',
       inject: 'body'
     }),
+    new HtmlWebpackPlugin({
+      title: 'Корпоративная практика, слияния и поглощения',
+      filename: 'services/corporate.html',
+      template: 'ejs-render?raw=true!./assets/html/corporate.ejs',
+      inject: 'body'
+    }),
+    new HtmlWebpackPlugin({
+      title: 'Обслуживание инфраструктурных проектов',
+      filename: 'services/infrastructure.html',
+      template: 'ejs-render?raw=true!./assets/html/infrastructure.ejs',
+      inject: 'body'
+    }),
+    new HtmlWebpackPlugin({
+      title: 'Сопровождение строительства и сделок с недвижимостью',
+      filename: 'services/realty.html',
+      template: 'ejs-render?raw=true!./assets/html/realty.ejs',
+      inject: 'body'
+    }),
+    new HtmlWebpackPlugin({
+      title: 'Защита интеллектуальной собственности',
+      filename: 'services/intellectual.html',
+      template: 'ejs-render?raw=true!./assets/html/intellectual.ejs',
+      inject: 'body'
+    }),
+    new HtmlWebpackPlugin({
+      title: 'Внешнеэкономическая деятельность',
+      filename: 'services/external.html',
+      template: 'ejs-render?raw=true!./assets/html/external.ejs',
+      inject: 'body'
+    }),
+    new HtmlWebpackPlugin({
+      title: 'Налоговая практика',
+      filename: 'services/tax.html',
+      template: 'ejs-render?raw=true!./assets/html/tax.ejs',
+      inject: 'body'
+    }),
+    new HtmlWebpackPlugin({
+      title: 'Сопровождение ИТ проектов',
+      filename: 'services/it.html',
+      template: 'ejs-render?raw=true!./assets/html/it.ejs',
+      inject: 'body'
+    }),
+    new HtmlWebpackPlugin({
+      title: 'Разрешение споров',
+      filename: 'services/disputes.html',
+      template: 'ejs-render?raw=true!./assets/html/disputes.ejs',
+      inject: 'body'
+    }),
+    new HtmlWebpackPlugin({
+      title: 'Соглашение о пользовании сайтом',
+      filename: 'terms-of-use.html',
+      template: 'ejs-render?raw=true!./assets/html/terms-of-use.ejs',
+      inject: 'body'
+    }),
+    new HtmlWebpackPlugin({
+      title: 'Политика конфиденциальности',
+      filename: 'privacy-policy.html',
+      template: 'ejs-render?raw=true!./assets/html/privacy-policy.ejs',
+      inject: 'body'
+    }),
     new webpack.HotModuleReplacementPlugin({
       // Options...
     })

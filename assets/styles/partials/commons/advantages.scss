@@ -1,6 +1,9 @@
 .advantages {
     background-color: $main-color;
     margin: 150px 0;
+    @include media-breakpoint-down(md) {
+        margin: 120px 0;
+    }
     .container {
 
     }
@@ -15,20 +18,38 @@
     &:last-child {
         justify-content: flex-end;
     }
+    @include media-breakpoint-down(xs) {
+        flex-direction: column;
+        align-items: center;
+    }
     &__image {
         height: 320px;
+        width: 240px;
+        @include media-breakpoint-down(md) {
+            height: 260px;
+            width: 195px;
+        }
+        
         .advantage-item:first-child & {
             margin-top: -150px;
             order: 1;
+            @include media-breakpoint-down(md) {
+                margin-top: -120px;
+            }
+            
         }
         .advantage-item:last-child & {
             margin-bottom: -150px;
             order: 2;
+            @include media-breakpoint-down(md) {
+                margin-bottom: -120px;
+            }
         }
     }
     &__text {
         padding: 25px;
         color: #ffffff;
+        
         .advantage-item:first-child & {
             // margin-top: -150px;
             order: 2;
@@ -37,6 +58,12 @@
             // margin-bottom: -150px;
             order: 1;
             text-align: right;
+            @include media-breakpoint-down(xs) {
+                text-align: center;
+            }
+        }
+        @include media-breakpoint-down(xs) {
+            text-align: center;
         }
     }
     &__title {
@@ -44,10 +71,16 @@
         border-bottom: 1px solid rgba(255,255,255,.2);
         padding-bottom: 10px;
         margin-bottom: 15px;
+        @include media-breakpoint-down(md) {
+            font-size: 22px;
+        }
     }
     &__description {
         font-weight: 300;
         color: #fcfcfc;
         font-size: 18px;
+        @include media-breakpoint-down(md) {
+            font-size: 14px;
+        }
     }
 }

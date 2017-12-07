@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link href="https://fonts.googleapis.com/css?family=Noto+Serif:400,700|Roboto:300,400&amp;subset=cyrillic" rel="stylesheet">
+  <!-- Bootstrap CSS -->
+</head>
+
+<body>
+  <header class="header header_tax">
+    <div class="header__bg header__bg_blue"></div>
+    <div class="header__top">
+      <div class="header__top-bg"></div>
+      <div class="container">
+        <%- include('commons/logo', {index: false}) %>
+        <%- include commons/main-menu %>
+        <%- include commons/phone %>
+      </div>
+    </div>
+    <div class="header__bottom top-block">
+      <div class="container">
+        <h1 class="main-title">Налоговая практика</h1>
+        <div class="top-block__description">
+          
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="description">
+    <div class="container">
+        <p>Мониторинг налоговых рисков хозяйственных операций, договоров, деятельности налогоплательщиков, структурирование бизнеса с учетом минимизации налоговых рисков, международное налоговое планирование, досудебное и судебное разрешение споров с налоговыми органами, сопровождение налогоплательщиков при проведении налоговых проверок, в том числе с привлечением правоохранительных органов, услуги по трансфертному ценообразованию и контролируемым сделкам, возврат налогов, возмещение НДС</p>
+    </div>
+  </div>
+
+  <%- include commons/advantages %>
+  <%- include commons/contacts %>
+  <%- include commons/footer %>
+
+
+
+</body>
+
+</html>
