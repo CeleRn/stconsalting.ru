@@ -83,7 +83,10 @@ module.exports = {
         test: /\.(css)$/,
         use: extractCSS.extract('css')
       },
-
+      { // Картинки 
+        test: /\.pdf$/,
+        use: 'file?name=assets/pdf/[name].[ext]'
+      },
       { // Картинки 
         test: /\.(png|jpg|svg|gif)$/,
         exclude: path.join(__dirname, "assets", "icons"),

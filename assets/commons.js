@@ -52,3 +52,8 @@ require('./images/services-icon/it.svg');
 require('./images/services-icon/nalog.svg');
 require('./images/services-icon/spor.svg');
 require('./images/services-icon/ved.svg');
+
+
+// PDF
+
+require('./pdf/vedomost_sout.pdf');
