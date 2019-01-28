@@ -56,4 +56,4 @@ require('./images/services-icon/ved.svg');
 
 // PDF
 
-require('./pdf/vedomost_sout.pdf');
+require('./pdf/vedomostsout.pdf');
